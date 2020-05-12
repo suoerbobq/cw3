@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'MyriadPro-Regular';}
+	.st1{font-size:19.41px;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 163.085 177.519)" class="st0 st1">Turkey</text>
+	<polyline class="st2" points="230.5,848.5 349.5,848.5 349.5,885.5 230.5,885.5 	"/>
+	<polyline class="st2" points="230.5,745.5 349.5,745.5 349.5,783.5 230.5,783.5 	"/>
+	<polyline class="st2" points="230.5,642.5 349.5,642.5 349.5,681.5 230.5,681.5 	"/>
+	<polyline class="st2" points="230.5,539.5 349.5,539.5 349.5,579.5 230.5,579.5 	"/>
+	<polyline class="st2" points="230.5,436.5 349.5,436.5 349.5,477.5 230.5,477.5 	"/>
+	<polyline class="st2" points="230.5,333.5 349.5,333.5 349.5,375.5 230.5,375.5 	"/>
+	<polyline class="st2" points="231,230 350,230 349.5,273.5 230.5,273.5 	"/>
+	<text transform="matrix(1 0 0 1 152.1445 132.811)" class="st0 st1">Belgium</text>
+	<line class="st3" x1="454.5" y1="149.5" x2="349.5" y2="149.5"/>
+	<polyline class="st3" points="230.5,127.5 349.5,127.5 349.5,149.5 349.5,171.5 230.5,171.5 	"/>
+	<g>
+		<rect x="145.5" y="219.5" class="st4" width="171" height="22"/>
+		<path d="M316,220v21H146v-21H316 M317,219H145v23h172V219L317,219z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="466.5" class="st4" width="171" height="22"/>
+		<path d="M316,467v21H146v-21H316 M317,466H145v23h172V466L317,466z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="425.5" class="st4" width="171" height="22"/>
+		<path d="M316,426v21H146v-21H316 M317,425H145v23h172V425L317,425z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="364.5" class="st4" width="171" height="22"/>
+		<path d="M316,365v21H146v-21H316 M317,364H145v23h172V364L317,364z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="322.5" class="st4" width="171" height="22"/>
+		<path d="M316,323v21H146v-21H316 M317,322H145v23h172V322L317,322z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="262.5" class="st4" width="171" height="22"/>
+		<path d="M316,263v21H146v-21H316 M317,262H145v23h172V262L317,262z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="528.5" class="st4" width="171" height="22"/>
+		<path d="M316,529v21H146v-21H316 M317,528H145v23h172V528L317,528z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="568.5" class="st4" width="171" height="22"/>
+		<path d="M316,569v21H146v-21H316 M317,568H145v23h172V568L317,568z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="772.5" class="st4" width="171" height="22"/>
+		<path d="M316,773v21H146v-21H316 M317,772H145v23h172V772L317,772z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="734.5" class="st4" width="171" height="22"/>
+		<path d="M316,735v21H146v-21H316 M317,734H145v23h172V734L317,734z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="670.5" class="st4" width="171" height="22"/>
+		<path d="M316,671v21H146v-21H316 M317,670H145v23h172V670L317,670z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="631.5" class="st4" width="171" height="22"/>
+		<path d="M316,632v21H146v-21H316 M317,631H145v23h172V631L317,631z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="837.5" class="st4" width="171" height="22"/>
+		<path d="M316,838v21H146v-21H316 M317,837H145v23h172V837L317,837z"/>
+	</g>
+	<g>
+		<rect x="145.5" y="874.5" class="st4" width="171" height="22"/>
+		<path d="M316,875v21H146v-21H316 M317,874H145v23h172V874L317,874z"/>
+	</g>
+</g>
+</svg>

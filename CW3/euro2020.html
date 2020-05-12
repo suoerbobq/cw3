@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- 57 characters title length, SEO guide recommend the title to be under 60 characters to that the title can be displayed
+            in search engine results-->
+        <title>UEFA Euro 2020 Predictions: Who would have won the Euros?</title>
+        <link rel="shortcut icon" href="img/trophy.jpg" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 124 characters description length, because Google truncates the text when it is around 155-160 long.
+        I deliberately used 'UEFA Euro 2020', 'Euros 2020' and just 'Euros' in the title and description so that various search terms for the same tournament would lead to my website -->
+        <meta name="description" content="Is football coming home? Find out which nation would have won the Euros 2020 if the tournament would have taken place this year.">
+
+        <!-- UIkit -->
+        <link rel="stylesheet" href="uikit-3.4.2/css/uikit.min.css" />
+        <script src="uikit-3.4.2/js/uikit.min.js"></script>
+        <script src="uikit-3.4.2/js/uikit-icons.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+        <!-- js library for brackets -->
+        <script src="jquery-bracket-master 2/dist/jquery.bracket.min.js"></script>
+        <link href="jquery-bracket-master 2/dist/jquery.bracket.min.css" rel="stylesheet">
+
+        <!-- c3 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.21/c3.min.css" rel="stylesheet" />
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.21/c3.min.js"></script>
+
+        <!-- css for the simulator -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+      <style>
+
+      #heading {
+        color: white;
+      }
+
+      #caption {
+        font-size: 12px;
+      }
+
+      ul {
+        font-size: 15px;
+      }
+
+      .demo3 {
+        uk-margin-bottom: 15px;
+      }
+
+      .demo2 {
+        uk-margin-bottom: 15px;
+      }
+
+      .demo {
+        uk-margin-bottom: 15px;
+      }
+
+      .demo1 {
+        uk-margin-bottom: 15px;
+      }
+
+      #parallax {
+        height: 600px
+      }
+
+      </style>
+    </head>
+
+
+    <body>
+
+      <!-- cover -->
+
+      <div class="uk-cover-container uk-height-viewport">
+          <iframe src="https://www.youtube.com/embed/Vgfe_XqB37s" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
+          <div id="heading" class="uk-position-large uk-position-center-right uk-overlay uk-heading-medium uk-heading-divider">Who would have won UEFA Euro 2020?</div>
+          <div id="heading" class="uk-position-bottom-right uk-overlay">©<a href="https://www.youtube.com/watch?v=Vgfe_XqB37s">2019 UEFA</a></div>
+      </div>
+
+      <!-- navigation bar -->
+
+      <div uk-sticky="sel-target: .uk-navbar-container; cls-inactive: uk-navbar-transparent;">
+          <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 200;">
+              <div class="uk-navbar-left">
+                  <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100" >
+                      <li><a href="#group_stage">Group Stage</a></li>
+                      <li><a href="#round_of_16">Round of 16</a></li>
+                      <li><a href="#quarter_finals">Quarter-Finals</a></li>
+                      <li><a href="#semi_finals">Semi-Finals</a></li>
+                      <li><a href="#finale">Finale</a></li>
+                  </ul>
+
+              </div>
+          </nav>
+      </div>
+
+      <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+        <h1 class="uk-heading-divider">Introduction</h1>
+            <p>The Euros 2020 were supposed to be played between 12 June - 12 July for the first time across several host nations to commemorate its' 60th anniversary.
+            It would have been a summer full of memorable goals, underdog stories, last-minute winners and a tournament that would be remembered for many years after its' completion.</p>
+            <p>However, due to the global Covid-19 pandemic, it's rather a summer confined to the four-walls of our own homes, in which we are forced to watch replays of Greece's unlikely success in 2004, Spain's tiki-taka dominance inbetween 2008 and 2012, and England's disappointing exit against Iceland in 2016,
+              as UEFA Euro 2020 was officially rescheduled to 11 June - 11 July 2021.</p>
+            <p>So here is a <span class="uk-text-bold">countdown until the start of UEFA Euro 2021</span></p>
+
+      <div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2021-06-11T21:00:00+00:00">
+        <div>
+            <div class="uk-countdown-number uk-countdown-days"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-hours"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-minutes"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-seconds"></div>
+            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+        </div>
+    </div>
+
+              <p>As you can see, it's still quite a long way to go. So you could either stick around and watch the clock run down or continue to find out, which nation would have won UEFA Euro 2020, if the tournament would have taken place this year.</p>
+
+        <div uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+            <h3>*Note</h3>
+              <p>This is a simulation of the entire tournament and could be a long read, so feel free to jump straight to the result or the stages of your interest via the navigation bar.</p>
+              <p>The prediction of the tournament and the games is based on data in the form statistics, head-to-head records and form, but also heavily realiant on subjectivity as football can often be unpredictable. All teams marked with * are unconfirmed teams as they still need to qualify through the play-offs.</p>
+        </div>
+
+
+
+        <!-- Group Stage -->
+
+        <h1 class="uk-heading-divider" id="group_stage">Group Stage</h1>
+
+        <h3 class="uk-heading-bullet">Group A</h3>
+          <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+            <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>Goal Difference</th>
+                        <th>Points</th>
+                        <th>Odds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Italy</td>
+                        <td>+4</td>
+                        <td>9</td>
+                        <td>1.80</td>
+                    </tr>
+                    <tr>
+                        <td>2. Turkey</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>3. Switzerland</td>
+                        <td>-1</td>
+                        <td>3</td>
+                        <td>4.25</td>
+                    </tr>
+                    <tr>
+                        <td>4. Wales</td>
+                        <td>-3</td>
+                        <td>1</td>
+                        <td>7.00</td>
+                    </tr>
+                </tbody>
+          </table>
+
+          <figure class="uk-thumbnail">
+              <img src="img/immobile.jpg" alt="">
+              <figcaption id="caption" class="uk-thumbnail-caption">Europe's most in-form striker: Ciro Immobile (0.83 xG90)</figcaption>
+          </figure>
+
+        </div>
+
+
+        <div class="uk-margin-top uk-text-justify">
+          <ul class="uk-list uk-list-divider">
+            <li>According to the odds and our predictions, Italy would finish this group with ease. The team was only one of two teams that won all of their qualification matches and with splendid attacking football, scoring an average of 3.7 goals, the Italians top group A.</li>
+            <li>Turkey's defense could have led them to a surprise second spot in group A, having only conceded 0.2 goals per game in a group with France. Although an offensively inexperienced side, our predictions see Turkey go through the group stages.</li>
+            <li>Switzerland is one of the most consistent sides in international football, having qualified for the round of 16 in four major tournaments in a row. However, even with Xherdan Shaqiri in the side, who has missed almost all qualification games, we predict the Swiss will only finish third in the group.</li>
+            <li>Although Wales' was able to make an impressive run four years ago in the UEFA Euro 2016, the team arguably declined in this timespan. They could potentially still have an impact with young players such as Daniel James coming through, but the Dragons take the last spot in this group according to our predictions.</li>
+          </ul>
+        </div>
+
+        <p uk-margin>
+          <a class="uk-button uk-button-default" href="#group_a" uk-toggle>Details</a>
+        </p>
+
+              <!-- I put all the matchday details into boxes so that the reader is not forced to go through them when reading the article (would be way too long),
+              but I still wanted to include them to show the thoughts behind every single match and if a reader is interested, he/she can go through them -->
+
+              <div id="group_a" uk-modal>
+                  <div class="uk-modal-dialog">
+                      <button class="uk-modal-close-default" type="button" uk-close></button>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 1</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Italy v Turkey (7-4-0, Rome) – 1-0 Italy win.</span> Turkey 0.2 goals conceded per match during qualification against Italy scored 3.7 goals during qualification. First game of the tournament with Italy playing at home. Pressure and penalty gets Italy the win.</p>
+                          <p><span class="uk-text-bold">Wales v Switzerland (1-0-3, Baku) – 1-3 Switzerland win.</span> Both teams offensively not strong during qualification, but with Shaqiri coming back who missed almost all of the qualification, Switzerland edges the win.</p>
+                      </div>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 2</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Italy v Switzerland (3-4-2, Rome) – 3-1 Italy win.</span> 14 matches without loss (13 wins), playing at home again. Ball position football is tough to handle for all the teams in the group as they lack the quality to break Italy.</p>
+                          <p><span class="uk-text-bold">Turkey v Wales (0-0-0, Baku) – 1-1 draw.</span> Never played against each other ever, but both teams hard-working but mainly defensively strong teams, frustrate each other.</p>
+                      </div>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 3</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Italy v Wales (7-0-2, Rome) – 4-3 Italy win.</span> Although Wales tried to hit Italy on the break difference in quality is key. Wales' motivation to make it to the next round was not enough.</p>
+                          <p><span class="uk-text-bold">Turkey v Switzerland (4-2-2, Baku) – 1-0 Turkey win.</span> Against a stronger Switzerland side. Merih Demiral and Caglar Soyuncu form the strongest defensive partnership in the tournament.</p>
+                      </div>
+                      <div class="uk-modal-footer uk-text-right">
+                          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                      </div>
+                  </div>
+              </div>
+
+
+          <h3 class="uk-heading-bullet">Group B</h3>
+          <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+            <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>Goal Difference</th>
+                        <th>Points</th>
+                        <th>Odds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Denmark</td>
+                        <td>+2</td>
+                        <td>7</td>
+                        <td>3.75</td>
+                    </tr>
+                    <tr>
+                        <td>2. Belgium</td>
+                        <td>+5</td>
+                        <td>6</td>
+                        <td>1.65</td>
+                    </tr>
+                    <tr>
+                        <td>3. Russia</td>
+                        <td>-1</td>
+                        <td>4</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>4. Finland</td>
+                        <td>-6</td>
+                        <td>0</td>
+                        <td>17.00</td>
+                    </tr>
+                </tbody>
+          </table>
+
+          <figure class="uk-thumbnail">
+              <img src="img/eriksen.jpg" alt="">
+              <figcaption id="caption" class="uk-thumbnail-caption">Denmark will be reliant on the creativity of Christian Eriksen</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="uk-margin-top uk-text-justify">
+          <ul class="uk-list uk-list-divider">
+            <li>Denmark cause the first upset in the tournament by beating Belgium to top spot of group B. This is due to the fact that the nation has a strong spine, has not lost a single game during the qualification and plays all their group matches at home.</li>
+            <li>Belgium's golden generation is aware that this could be one of the last chances to win a major trophy and are quality-wise the strongest team in group B. Although they have won all of their qualification matches and are second-favourites to win the tournament, they still only finish second in our predictions.</li>
+            <li>Russia's starting eleven has completely changed in the two years since hosting the World Cup in 2018, some players retired (Igo Akinfeev, Sergei Ignashevich) others have been injured (Alan Dzagoev) or were replaced (Fyodor Smolov), leaving a young and unexperienced, but strong side. We predict the young Russians would finish third in the group.</li>
+            <li>This would've been Finalnd's first time at the Euros. They did not play the best qualification (4 losses) and are clearly the least likely of the teams to qualify for the next round. Only 4 players of the squad (Teemu Pukki, Lukas Hradecky, Fredrik Jensen and Jesse Joronen) play in Europe's top five leagues, leaving Filand to finsih at the bottom of the group.</li>
+          </ul>
+        </div>
+
+        <p uk-margin>
+          <a class="uk-button uk-button-default" href="#group_b" uk-toggle>Details</a>
+        </p>
+
+              <div id="group_b" uk-modal>
+                  <div class="uk-modal-dialog">
+                      <button class="uk-modal-close-default" type="button" uk-close></button>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 1</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Belgium v Russia (5-2-0, St Petersburg) – 4-1 Belgium win.</span> Semi-finalists last World Cup and second favourites to win the tournament, 40 goals scored during qualification only conceded 3, Although the match is played in St Petersburg it will still be an easy win. Both were in the same qualification group where Russia lost two times against Belgium, 3-1 and 4-1 respectively.</p>
+                          <p><span class="uk-text-bold">Denmark v Finland (12-7-1, Copenhagen) – 1-0 Denmark win.</span> Playing at home, historically the better team, always low scoring matches, only average of 1.5 goals between both between both teams from 10 last match-ups.</p>
+                      </div>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 2</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Finland v Russia (0-0-4, St Petersburg) – 0-2 Russia win.</span> Russia won 8/10 matches with a goal difference of +27 prior to the tournament with both losses coming only against Belgium.</p>
+                          <p><span class="uk-text-bold">Belgium v Denmark (0-1-1, Copenhagen) – 1-2 Denmark win.</span> Even though Belgium might be the stronger team Denmark has shown that they are a tough side to beat having not lost a single game during the qualification and with high-quality players like Eriksen, Delaney, Kjaer, Schmeichel and many more have a strong individual core. Will be extra motivated as their side missed out on the last tournament and play at home. First upset of the tournament.</p>
+                      </div>
+                      <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">Matchday 3</h2>
+                      </div>
+                      <div class="uk-modal-body">
+                          <p><span class="uk-text-bold">Denmark v Russia (0-0-1, Copenhagen) – 2-2 draw.</span> A very even match, although Denmark plays at home again, this time however they lack a moment of brilliance to win the match.</p>
+                          <p><span class="uk-text-bold">Belgium v Finland (0-3-4, St Petersburg) – 3-0 win.</span> Eager to make up for the last game the Red Devils thrash Finland and qualify for the next round of the tournament, however, to a surprise only as second in the group.</p>
+                      </div>
+                      <div class="uk-modal-footer uk-text-right">
+                          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                      </div>
+                  </div>
+              </div>
+
+        <h3 class="uk-heading-bullet">Group C</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+          <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+              <thead>
+                  <tr>
+                      <th>Teams</th>
+                      <th>Goal Difference</th>
+                      <th>Points</th>
+                      <th>Odds</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1. Netherlands</td>
+                      <td>+8</td>
+                      <td>9</td>
+                      <td>1.50</td>
+                  </tr>
+                  <tr>
+                      <td>2. Austria</td>
+                      <td>-1</td>
+                      <td>4</td>
+                      <td>4.25</td>
+                  </tr>
+                  <tr>
+                      <td>3. *Romania</td>
+                      <td>-4</td>
+                      <td>2</td>
+                      <td>-/-</td>
+                  </tr>
+                  <tr>
+                      <td>4. Ukraine</td>
+                      <td>-3</td>
+                      <td>1</td>
+                      <td>4.25</td>
+                  </tr>
+              </tbody>
+        </table>
+
+        <figure class="uk-thumbnail">
+            <img src="img/de_ligt-min.jpg" alt="">
+            <figcaption id="caption" class="uk-thumbnail-caption">One-to-watch: Golden Boy 2019 winner Matthijs De Ligt is a rock at the back (©<a href="https://www.shutterstock.com/de/image-photo/porto-portuglal-june-09-2019-matthijs-1432020848">Vlad1988 </a>/ Shutterstock.com)</figcaption>
+        </figure>
+
+      </div>
+
+      <div class="uk-margin-top uk-text-justify">
+        <ul class="uk-list uk-list-divider">
+          <li>The Netherlands are the strongest team in the group by a mile. According to FedEx four out of the top five performers of the qualification and UEFA Nations League are Dutch and include Depay, De Jong, De Ligt and Cillessen. Furthermore, the Dutch are playing all three matches at home in Amsterdam.</li>
+          <li>Austria has not made it past the group stages on the two times they have qualified in 2008 and 2016. However, in the last group match against Ukraine, Austria edges the win. A mixture between experienced players like Alaba and Arnautovic with young talents like Laimer and Sabitzer is the key to this crucial win and second spot.</li>
+          <li>Romania, the surprise of play-off path A, manage to grab third place in the group. Although quality-wise weaker than the Ukraine, a historically better head-to-head record and home advantage in the group are crucial for Romania's two draws.</li>
+          <li>Although the Ukraine has played a good qualification (6 wins and 2 draws), they unluckily finish last in the group by losing the last game against Austria.</li>
+        </ul>
+      </div>
+
+      <p uk-margin>
+        <a class="uk-button uk-button-default" href="#group_c" uk-toggle>Details</a>
+      </p>
+
+      <div id="group_c" uk-modal>
+          <div class="uk-modal-dialog">
+              <button class="uk-modal-close-default" type="button" uk-close></button>
+              <div class="uk-modal-header">
+                  <h2 class="uk-modal-title">Matchday 1</h2>
+              </div>
+              <div class="uk-modal-body">
+                  <p><span class="uk-text-bold">Austria v Romania (1-2-0, Bucharest) – 1-1 draw.</span> Although Austria started the qualification disastrously the team won 6 out of their last 8 games and finished second in their qualification group, however, Romania, who managed to qualify through the play-offs will have the important home advantage. Even though stronger on paper, the Austrian national team has struggled in major competitions for many years, not making it past the group stages on the two times they have qualified in 2008 and 2016.</p>
+                  <p><span class="uk-text-bold">Netherlands v Ukraine (1-1-0, Amsterdam) – 2-0 Netherlands win.</span> Netherlands is the fourth likeliest to win the tournament according to the bookmakers and rightly so, only lost one qualification game in their group against Germany and made it to the semi-finals of the UEFA Nations League. Despite Ukraine’s strong qualification form with 6 wins and 2 draws while only conceding 4 goals, the Netherland’s quality is too much and they are also playing at home.</p>
+              </div>
+              <div class="uk-modal-header">
+                  <h2 class="uk-modal-title">Matchday 2</h2>
+              </div>
+              <div class="uk-modal-body">
+                  <p><span class="uk-text-bold">Austria v Netherlands (6-4-9, Amsterdam) – 1-3 Netherlands win.</span> Ukraine had the better game but relentless Romania playing at home fought back and it ended in a spectacular end-to-end match, although Ukraine’s defence has been stable throughout the qualifications, the last three games between these two teams saw 19 goals scored, so it is likely to be a goal-spectacle again.</p>
+                  <p><span class="uk-text-bold">Belgium v Denmark (0-1-1, Copenhagen) – 1-2 Denmark win.</span> Although the quality of the Austrian team has massively improved over the years, the Netherlands were simply too good. The top 5 players from the European qualifiers and UEFA Nations League include 4 players from the Netherlands, highlighting their strength. Austria tries to play football but loeses nevertheless.</p>
+              </div>
+              <div class="uk-modal-header">
+                  <h2 class="uk-modal-title">Matchday 3</h2>
+              </div>
+              <div class="uk-modal-body">
+                  <p><span class="uk-text-bold">Netherlands v Romania (10-3-1, Amsterdam) - 4-0 Netherlands win.</span> Difference in quality is too big and home advantage.</p>
+                  <p><span class="uk-text-bold">Austria v Ukraine (1-0-1, Bucharest) – 2-1 Austria win.</span> Qualitative uninspiring match, but both teams eager to book their place in the next round, Austria wins the match as many established players like Arnautovic and Alaba are at their career peak and younger players like Laimer and Sabitzer arrive at the tournament with a strong seasons behind them.</p>
+              </div>
+              <div class="uk-modal-footer uk-text-right">
+                  <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              </div>
+          </div>
+      </div>
+
+      <h3 class="uk-heading-bullet">Group D</h3>
+      <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+        <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+            <thead>
+                <tr>
+                    <th>Teams</th>
+                    <th>Goal Difference</th>
+                    <th>Points</th>
+                    <th>Odds</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. England</td>
+                    <td>+3</td>
+                    <td>9</td>
+                    <td>1.40</td>
+                </tr>
+                <tr>
+                    <td>2. Croatia</td>
+                    <td>+2</td>
+                    <td>4</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>3. *Norway</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>-/-</td>
+                </tr>
+                <tr>
+                    <td>4. Czech Republic</td>
+                    <td>-5</td>
+                    <td>1</td>
+                    <td>13.00</td>
+                </tr>
+            </tbody>
+      </table>
+
+      <figure class="uk-thumbnail">
+          <img src="img/alexander_arnold-min.jpg" alt="">
+          <figcaption id="caption" class="uk-thumbnail-caption">Best providing defender in the world (12 assists in 28 games): Trent Alexander-Arnold (©<a href="https://www.shutterstock.com/de/image-photo/trent-alexanderarnold-england-scores-second-goal-1276175590">MDI </a>/ Shutterstock.com)</figcaption>
+      </figure>
+
+    </div>
+
+    <div class="uk-margin-top uk-text-justify">
+      <ul class="uk-list uk-list-divider">
+        <li>England's squad only improved from the semi-final run of the 2018 World Cup. Alexander-Arnold, Sancho and many more transformed a decent side into a world-class side and the Three Lions are deservedly the bookmakers favourite to win the tournament.</li>
+        <li>Even though Croatia has not played particularly well during the qualification (5 wins, 2 draws, 1 loss) and veterans like Modric, Rakitic or Perisic are getting to the end of their careers, they still make it into the round of 16.</li>
+        <li>Although Norway only qualified via the play-offs, young exciting talent Håland and Ødegaard would have given this unexperienced side a strong x factor that clinch them a deserved third place.</li>
+        <li>The Czech Republic, although not a weak side, have struggled with consistency. The team has lost 3 of their last 6 games and despite managing a draw against England, still finish at the bottom of the group.</li>
+      </ul>
+    </div>
+
+    <p uk-margin>
+      <a class="uk-button uk-button-default" href="#group_d" uk-toggle>Details</a>
+    </p>
+
+    <div id="group_d" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 1</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">Croatia v England (5-2-3, London) – 2-1 England win.</span> Three Lions scored 37 goals during qualification and only conceded 6, although lost against Croatia in the 2018 World Cup semi-final. England played Croatia twice since then and haven’t lost. Their home form has been extremely strong and squad has improved a lot with new additions like Alexander-Arnold or Sancho, who have been in world-class form for their clubs.</p>
+                <p><span class="uk-text-bold">Norway v Czech Republic (1-2-3, Glasgow) – 2-0 Norway win.</span> Norway comes into the game with a much better form, having only lost 1 in their last 10 games, albeit drawing 5 of those games, however, Norway is also equipped with a new-found star striker Håland, who proved that he can perform in big competitions. Czech Republic have lost 3 out of their last 6 games and seem to struggle to find any consistency.</p>
+            </div>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 2</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">Croatia v Czech Republic (1-2-0, Glasgow) – 4-1 Croatia win.</span> Although not in form, the Croatian squad with veterans like Modric, Rakitic or Perisic is significantly stronger than the Czech Republic squad and it should be a comfortable victory.</p>
+                <p><span class="uk-text-bold">England v Norway (7-3-2, London) – 3-1 England win.</span> England is the bookmakers favourite to win the Euros and deservedly so, although Norway hasn’t lost for many matches in a row, their opponent haven’t been on the level of England, which is why it should be a comfortable home win for them.</p>
+            </div>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 3</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">Czech Republic v England (2-1-1, London) 2-2 draw.</span> Czech Republic is the only team that beat England in between the last world cup and the euros, which is why they could possibly manage another result against England.</p>
+                <p><span class="uk-text-bold">Croatia v Norway (3-1-1, Glasgow) 2-2 draw.</span> Both teams offensively strong and want to qualify for the next round but ends in draw. Although Croatia has the stronger squad, Norway’s xfactor manages to draw the game.</p>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="uk-heading-bullet">Group E</h3>
+    <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+      <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+          <thead>
+              <tr>
+                  <th>Teams</th>
+                  <th>Goal Difference</th>
+                  <th>Points</th>
+                  <th>Odds</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1. Spain</td>
+                  <td>+9</td>
+                  <td>9</td>
+                  <td>1.40</td>
+              </tr>
+              <tr>
+                  <td>2. Sweden</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td>6.00</td>
+              </tr>
+              <tr>
+                  <td>3. Poland</td>
+                  <td>-2</td>
+                  <td>3</td>
+                  <td>5.00</td>
+              </tr>
+              <tr>
+                  <td>4. *Bosnia-Herzegovina</td>
+                  <td>-7</td>
+                  <td>0</td>
+                  <td>-/-</td>
+              </tr>
+          </tbody>
+    </table>
+
+    <figure class="uk-thumbnail">
+        <img src="img/ramos-min.jpg" alt="">
+        <figcaption id="caption" class="uk-thumbnail-caption">Sergio Ramos is the most capped player in Spain's history with 170 appearances (©<a href="https://www.shutterstock.com/de/image-photo/0107-moscow-russiasergio-ramos-action-during-1124597102">Marco Iacobucci Epp </a>/ Shutterstock.com)</figcaption>
+    </figure>
+
+  </div>
+
+  <div class="uk-margin-top uk-text-justify">
+    <ul class="uk-list uk-list-divider">
+      <li>Spain top the group with their ball posession football. Unbeaten in all of their 10 qualification games, none of the other teams would have been able to cope with Spain's control of the game.</li>
+      <li>Sweden has only built on their success in the 2018 World Cup, with most of the squad still intact. Adding to this one of Europe's most exciting young strikers Alexander Isak, we predict that the Swedes make it past the group stages once more.</li>
+      <li>Although individually on par or even better than Sweden, Poland seems to struggle in major competitions. Even Robert Lewandowski, arguably Europe's best striker, has only found the back of the net twice in 3 major competitions with Poland, which is only enough for a third place finish.</li>
+      <li>Bosnia-Herzegovina is definitely the weakest side in the group. The nation finished fourth in their qualification group, even behind Greece and Finland, and therefore finish last in our predictions.</li>
+    </ul>
+  </div>
+
+  <p uk-margin>
+    <a class="uk-button uk-button-default" href="#group_e" uk-toggle>Details</a>
+  </p>
+
+  <div id="group_e" uk-modal>
+      <div class="uk-modal-dialog">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <div class="uk-modal-header">
+              <h2 class="uk-modal-title">Matchday 1</h2>
+          </div>
+          <div class="uk-modal-body">
+              <p><span class="uk-text-bold">Bosnia-Herzegovina v Poland (0-0-1, Dublin) – 1-0 Poland win.</span> Bosnia-Herzegovina has struggled with consistency in their qualification and finished fourth in their group behind Italy, Finland and Greece, meanwhile Poland topped their group with only one loss.</p>
+              <p><span class="uk-text-bold">Spain v Sweden (5-2-3, Bilbao) – 3-1 Spain win.</span> Both teams were in the same qualification group and although the last time they met in Sweden the match finished 1-1, when they played in Spain the result was a comfortable 3-0 home victory. Both matches have seen Spain with over 70% possession and controlling the flow of the game so it is likely that this game is going to be similar.</p>
+          </div>
+          <div class="uk-modal-header">
+              <h2 class="uk-modal-title">Matchday 2</h2>
+          </div>
+          <div class="uk-modal-body">
+              <p><span class="uk-text-bold">Bosnia-Herzegovina v Sweden (1-0-0, Dublin) – 1-2 Sweden win.</span> Sweden’s superiority in quality with players like Forsberg, Lindelöf, who finished in the quarter-finals of the last world cup combined with one of Europe’s most exciting young strikers Isak, the team is stronger than Bosnia and ready for another run into the tournament.</p>
+              <p><span class="uk-text-bold">Poland v Spain (0-0-3, Bilbao) – 0-2 Spain win.</span> Historical dominance, home advantage and simply the strength of the squad makes a massive difference in this game. Despite having arguably the best striker in the world Lewandowski in the team, Poland lacks the quality across the entire team and Lewandowski has only scored 2 goals in the 3 major tournament he has featured in.</p>
+          </div>
+          <div class="uk-modal-header">
+              <h2 class="uk-modal-title">Matchday 3</h2>
+          </div>
+          <div class="uk-modal-body">
+              <p><span class="uk-text-bold">Bosnia-Herzegovina v Spain (0-2-6, Bilbao) – 0-5 Spain win.</span> Probably the most one-sided game in the group, should be an easy match for Spain.</p>
+              <p><span class="uk-text-bold">Poland v Sweden (8-4-14, Dublin) – 2-3 Sweden win.</span> Squad strength quite similar and both played good qualifications and in good form, however, Sweden hasn’t lost against Poland for 7 games, which is why Sweden makes it past Poland in this match as well.</p>
+          </div>
+          <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          </div>
+      </div>
+  </div>
+
+  <h3 class="uk-heading-bullet">Group F</h3>
+  <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+
+    <table class="uk-table uk-table-medium uk-table-striped uk-table-hover uk-table-divider">
+        <thead>
+            <tr>
+                <th>Teams</th>
+                <th>Goal Difference</th>
+                <th>Points</th>
+                <th>Odds</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Germany</td>
+                <td>+2</td>
+                <td>7</td>
+                <td>2.25</td>
+            </tr>
+            <tr>
+                <td>2. France</td>
+                <td>+2</td>
+                <td>5</td>
+                <td>2.25</td>
+            </tr>
+            <tr>
+                <td>3. Portugal</td>
+                <td>+2</td>
+                <td>4</td>
+                <td>4.75</td>
+            </tr>
+            <tr>
+                <td>4. *Kosovo</td>
+                <td>-6</td>
+                <td>0</td>
+                <td>-/-</td>
+            </tr>
+        </tbody>
+  </table>
+
+    <figure class="uk-thumbnail">
+        <img src="img/gnabry-min.jpg" alt="">
+        <figcaption id="caption" class="uk-thumbnail-caption">Serge Gnabry scoring for fun: 13 goals in 13 games for Germany (©<a href="https://www.shutterstock.com/de/image-photo/gelsenkirchen-nov-19-2018-serge-gnabry-1304984728">Anton_Ivanov </a>/ Shutterstock.com)</figcaption>
+    </figure>
+
+</div>
+
+    <div class="uk-margin-top uk-text-justify">
+      <ul class="uk-list uk-list-divider">
+        <li>Germany top the group not because they are better than the other teams in the 'group of death'. This group could potentially look completely different, but our predictions mainly took the head-to-head record and current strenght of the squads into consideration.</li>
+        <li>World Champions France must be disappointed by finishing second in the group. However, as seen in their loss against Turkey in the qualifiers, France could have a bad day at the office and draw against Portugal, which would then lead to a second-placed finish.</li>
+        <li>The Portuguese squad is filled with the most exciting young talent in the world with the likes of Joao Felix, Diogo Jota and many more, but just finish below the other European heavyweights in our predictions.</li>
+        <li>Kosovo did not stand a chance against any of the other teams. Although the young nation does not have a head-to-head record with any of the teams, it would be the surprise of the tournament if Kosovo wouldn't finish bottom of the group.</li>
+      </ul>
+    </div>
+
+    <p uk-margin>
+      <a class="uk-button uk-button-default" href="#group_f" uk-toggle>Details</a>
+    </p>
+
+    <div id="group_f" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 1</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">Kosovo v Portugal (0-0-0, Budapest) – 1-4 Portugal win.</span> Although Kosovo managed to qualify through the play-offs and has a trump card in Rashica, the overall quality of the squad is not comparable to any of the other 3 teams.</p>
+                <p><span class="uk-text-bold">France v Germany (8-4-4, Munich) – 1-1 draw.</span> The last three games between these two European heavyweights have been extremely close in terms of match statistics, often only decided by a penalty like in the Nations League, so the match could end in a draw again. They are the third likeliest and fifth-likeliest to win the trophy, it is going to be a very tight match.</p>
+            </div>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 2</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">France v Kosovo (0-0-0, Budapest) – 2-0 France win.</span> Should be a comfortable victory, not as many goals as Portugal because France’s form coming into the tournament has not been extraordinary in terms of goals scored, but a more experienced core from the previous tournament means that it can manage games better.</p>
+                <p><span class="uk-text-bold">Germany v Portugal (6-3-1, Munich) – 2-1 Germany win.</span> Germany has won the last 4 outings between both teams and is often the team to bet on in major tournaments, although both teams have incredibly talented players, the home advantage and the splendid form of Gnabry who has scored 13 goals in 13 appearances for the national team give Germany just the edge over the title defenders.</p>
+            </div>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Matchday 3</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p><span class="uk-text-bold">Germany v Kosovo (0-0-0, Munich) – 2-1 Germany win.</span> Just as the other games with Kosovo, it should be a comfortable game for Germany.</p>
+                <p><span class="uk-text-bold">France v Portugal (18-1-6, Budapest) – 2-2 draw.</span> Although France have almost always won against Portugal in major competitions, but as the 2016 UEFA Euro final has shown, it is not always that easy. What makes tournaments exciting are the unexpected results and with Portugal having strengthened their squad since the last Euros, it is not an unlikely result that the Portuguese will get away with a draw.</p>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Round of 16 -->
+
+  <h1 class="uk-heading-divider" id="round_of_16">Round of 16</h1>
+  <h3 class="uk-heading-bullet">Seeding</h3>
+  <p>Following the group stages, we followed the official <a href="https://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/54/36/05/2543605_DOWNLOAD.pdf">UEFA handbook</a> and <a href="https://www.uefa.com/uefaeuro-2020/matches/#/dw/1185">schedule</a> to determinate the match-ups of the round of 16. The best four third-placed teams that qualify for the knockout-rounds of the competitions are Switzerland (Group A), Russia (Group B), Norway (Group D) and Portugal (Group F).</p>
+  <p>Below are the confirmed games for the round of 16, followed by detailed match predictions or jump straight to the <a href="#results_16">results.</a></p>
+  <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+  <div class="demo"></div>
+  </div>
+  <h3 class="uk-heading-bullet">Match Details</h3>
+
+<!-- I took the same design approach from the group stage to the round of 16, to not force the reader to read everything that I have written, but to still include it.
+    The idea behind this is that the more advanced the tournament gets, the more engaging the content would become. -->
+
+    <ul uk-tab="animation: uk-animation-fade; toggle: > *">
+        <li><a href="#">BEL v TUR</a></li>
+        <li><a href="#">NED v POR</a></li>
+        <li><a href="#">AUT v ITA</a></li>
+        <li><a href="#">DEN v NOR</a></li>
+        <li><a href="#">GER v RUS</a></li>
+        <li><a href="#">CRO v SWE</a></li>
+        <li><a href="#">ENG v FRA</a></li>
+        <li><a href="#">ESP v SUI</a></li>
+    </ul>
+
+  <ul class="uk-switcher uk-margin">
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+        <!-- I wish I could have made the donut charts a bit bigger, but somehow they would always overlap with the text below and disappear if I made them any bigger than that. -->
+          <div id="bel_tur_wins"></div>
+          <div id="bel_tur_goals"></div>
+        </div>
+          <p>Historically Turkey has been the better team between both of them, however, the last game was played in 2010, which was when Belgium’s golden generation was still at the start of their career (Hazard, De Bruyne, Lukaku etc.). We can expect a game that Belgium dominates as seen through their average ball possession (58.23% in the last 40 games) and goals per game (3.24), both of which are higher than Turkeys 54,91% and 1.43. Turkey has had 63 yellow cards compared to Belgiums 32 in the last 40 games, which shows Turkey’s hard-tackling defensive approach to games.</p>
+          <p>Even though Turkey’s defence has been their strong point throughout the tournament and qualification, it could be that under the immense pressure of the Belgium team, Turkey would eventually receive a red card and shift the game in favour to the Red Devils.</p>
+          <p>All in all it is a very competitive game in which Belgium manages a narrow win over a defensively strong Turkey side that tried to recreate Greece’s success in 2004.</p>
+          <p id="results_16"><span class="uk-text-bold uk-text-danger">Belgium 1-0 Turkey</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="ned_por_wins"></div>
+          <div id="ned_por_goals"></div>
+        </div>
+          <p>Although this game is a replay of the 2019 UEFA Nations League finale, which Portugal won 1-0, and head-to-head Portugal seems to be dominating, it is one of the more competitive match-ups in the round of 16 as Netherlands also won one friendly between them 3-0 in March 2018. Both teams had very similar statistics for the last 40 games (POR/NED, 58.00%/59.17% possession, 2.25/2.17 goals per game etc.) and are both quality-wise also on a very high-level, with individual players that could tip the game one way or another. However, as this is a prediction of the tournament, bold decisions have to be made and we believe that it is likely that Portugal is going to lose this match.</p>
+          <p>The nation has relied on Cristiano Ronaldo’s goals for many years, however, the last time that Ronaldo has scored more than 3 goals for Portugal in the Euros was back in 2008. Combine this with his declining xG (expected goals per season), from over 35xg to only 17xg over the last 5 seasons and a very strong Netherlands defence, it could be hard for Portugal to break down the Dutch side. Although players like De Ligt, De Jong or Depay might not have had the best seasons with their clubs, when they play with their national team, it seems to click, which is evident as they are 3 of the best five performers throughout the qualifiers and the Nations League according to the FedEx Peformance Zone.</p>
+          <p>It is therefore a very competitive game, but the Dutch will just about make it past the Portuguese in this simulation.</p>
+          <p><span class="uk-text-bold uk-text-danger">Netherlands 3-2 Portugal</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="aut_ita_wins"></div>
+          <div id="aut_ita_goals"></div>
+        </div>
+          <p>As much as I, as a fellow Austrian myself, would have loved for my country to beat Italy, there was not a single piece of statistic I could use to argue my way through to an Austrian win. Be it ball possession, shots per game, goals conceded, clean sheets and even corners, the Austrian side seemed to be worse in everything compared to Italy. Although it breaks my heart, this is probably one of the most straightforward games in the round of 16 and should be a comfortable victory for the Italian side.</p>
+          <p>Ciro Immobile, who often outscores his xG90 (expected goals per 90 minutes) of 0.83 and the Italians attacking quality bully the weaker Austrian defence in this game. Despite the loss, the Austrian side should be proud to make it into the round of 16 for the first time in their history.</p>
+          <p><span class="uk-text-bold uk-text-danger">Austria 0-3 Italy</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="den_nor_wins"></div>
+          <div id="den_nor_goals"></div>
+        </div>
+          <p>It’s the battle of the underdogs and one of them might just become the surprise of the tournament. Denmark has played incredibly well until now in the tournament, topping the group with Belgium and Russia, but bearing mind their advantage of playing at home. Norway on the other hand has been one of the dark horses of the tournament with Erling Haaland and Martin Oedegaard impressing on the big stage.</p>
+          <p>However, Denmark’s spine is one of the strongest of the tournament with Poulsen/Braithwaite, Eriksen, Delaney, Christensen/Kjaer and Schmeichel and is quality-wise much stronger than Norway. The head-to-head record also speaks for itself and this results in a comfortable victory for a strong Denmark side.</p>
+          <p><span class="uk-text-bold uk-text-danger">Denmark 2-0 Norway</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="ger_rus_wins"></div>
+          <div id="ger_rus_goals"></div>
+        </div>
+          <p>The last time these two met was a friendly in November 2018, it resulted in a complete disaster for the Russian team. Without a single shot on target and only 32% ball possession, the German team won comfortably 3-0 and we are predicting a similar result.</p>
+          <p>Germany’s failure at the 2018 world cup and a reshuffle of the whole squad, where former world cup winners, Müller, Boateng and Hummels were told that they were surplus to requirements and the controversial retirement of Özil, has rejuvenated the side. Players like Gnabry (13 goals in 13 games), Havertz or Werner will be looking forward to make their mark in the national team. </p>
+          <p>Even though Russia made it through a tough group with Belgium, Denmark and Romania, the German’s historical domination and sheer quality throughout the whole squad makes it an easy win.</p>
+          <p><span class="uk-text-bold uk-text-danger">Germany 4-1 Russia</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="cro_swe_wins"></div>
+          <div id="cro_swe_goals"></div>
+        </div>
+          <p>This is a very interesting game between the runners-up Croatia and quarter-finalists Sweden of the previous world cup, two teams that are used to exceeding expectations in recent times. Although some predictions and the bookmakers might argue that Croatia would have a better chance of winning this match, the truth is that it is more complicated than that.</p>
+          <p>After the World Cup, the Croatian team arguably declined and Sweden only built on their previous run. Some established stars like Rakitic have lost their place in the starting eleven and Croatia has been somewhat shaky throughout the qualifiers, having drawn against ‘weaker’ teams like Azerbaijan, Hungary or Wales. Sweden meanwhile controlled their group and lost only one game against group leaders Spain and have exciting striking talent like Aleksander Isak coming through the team.</p>
+          <p>The prediction is that while Croatia (55.25% ball possession, 3.86 shots per game) probably dominates the game, Sweden’s more defensive-focused and transition based football (47.78% ball possession, 5.2 shots per game) will come in handy against an aging Croatian squad.</p>
+          <p><span class="uk-text-bold uk-text-danger">Croatia 1-2 Sweden</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="eng_fra_wins"></div>
+          <div id="eng_fra_goals"></div>
+        </div>
+          <p>This is the game, it’s make or break for the Three Lions, who despite their impressive semi-final run at the 2018 World Cup, need to finally prove that they can make it past the very best. Both teams have played incredible qualifications and only had one bad day at the office, England against Czech Republic and France against Turkey, but either of them have only improved from the previous tournament.</p>
+          <p>While France’s strongest eleven will stay more or less the same compared to 2018, with Lenglet replacing Umtiti the only exception, England will have a stronger squad than 2 years prior. The strongest addition for England will come in the form of Jadon Sancho, who established himself as one of the most consistent attacking threats in the Bundesliga by constantly outscoring and assisting his xG (0.41/game) and xA (0.43/game). The youngster, who has scored 14 goals and provided 15 assists in only 23 Bundesliga appearances this season will possibly form a deadly partnership with Harry Kane, who hit the back of the net 12 times during the qualification and give something for France to deal with.</p>
+          <p>We believe that the game would have been a highly intense, front-to-end match with both teams going for it. Either of the teams’ attacking prowess and also defensive stability will make for an exciting game, however, for this one we are siding with the bookmakers and send the favourites of the tournament through to the Quarter-finals and one step closer to Wembley.</p>
+          <p><span class="uk-text-bold uk-text-danger">England 3-2 France (2-2 FT)</span></p>
+    </li>
+
+    <li>
+      <h3>Head-to-head statistics</h3>
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-2@l uk-text-center" uk-grid>
+          <div id="esp_sui_wins"></div>
+          <div id="esp_sui_goals"></div>
+        </div>
+          <p>Will Switzerland finally make it past the round of 16 in a major tournament? Well, in Spain they definitely have an immense hurdle to overcome to achieve a historical result for the nation. Spain played an immaculate qualification, having went 10 games unbeaten, but at the same time, this is not the same Spain squad of a decade ago that went on to win 3 major tournaments in a row with their tiki-taka football. Most of the successful squad is gone and this is a team that has not made it past the round of 16 in three consecutive tournaments. While Spain has some exciting talent coming through the ranks, like Fati, Olmo or Oyarzabal, this game could be much closer than many would predict. </p>
+          <p>Either way, one of these teams are destined to break their round of 16 ‘curse’, but we predict that it is going to be a repeat of both teams’ 2018 match-up and end in a 1-1 draw at full-time. With hard-working and physically strong players like Xhaka, Zakaria and Akanji, we predict that the Swiss just about manage to drag the 1-1 result over the final-whistle, which results in a historical penalty-shootout that sees the alpine nation make it through to the next round.</p>
+          <p id="results_16">Even though Spain was the much better team on the field, bad luck and a tough Swiss side showed that it was not meant to be for La Furia Roja at this year’s Euros.</p>
+          <p><span class="uk-text-bold uk-text-danger">Spain 1-1 Switzerland FT, Spain 3-4 Switzerland PEN</span></p>
+    </li>
+
+  </ul>
+
+<h3 class="uk-heading-bullet">Round of 16 Results</h3>
+  <div>
+      <button class="uk-button uk-button-default uk-width-1-1" type="button" uk-toggle="target: #toggle; animation: uk-animation-fade">Reveal</button>
+      <div id="toggle" class="demo1" hidden></div>
+  </div>
+
+
+
+  <!-- Quarter finals! -->
+
+      <h1 id="quarter_finals" class="uk-heading-divider">Quarter-Finals</h1>
+      <h3 class="uk-heading-bullet">Seeding</h3>
+      <p>Following a surprising Round of 16, which saw the elimination of World Cup winners France as well as runners-up Croatia from the tournament, we once again followed the official <a href="https://www.uefa.com/uefaeuro-2020/matches/#/dw/1185">schedule</a> to determinate the match-ups of the quarter-finals.</p>
+        Below are all the games of the next round, followed by a detailed match analysis and the <a href="#results_qf">results</a>:</p>
+
+      <ul class="uk-list uk-list-bullet">
+          <li>QF1: Sweden v Germany (St Petersburg)</li>
+          <li>QF2: Denmark v Italy (Munich)</li>
+          <li>QF3: Belgium v Netherlands (Baku)</li>
+          <li>QF4: Switzerland v England (Rome)</li>
+      </ul>
+      <hr class="uk-divider-icon">
+
+      <h2 class="uk-heading-bullet uk-text-center">Sweden v Germany (0W-2D-6L, St Petersburg)</h2>
+      <h4 class="uk-heading-line uk-text-center"><span>Last Match: 1-2 (2018)</span></h4>
+
+      <iframe src="https://www.youtube.com/embed/4e9a3KptfC0" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+          <div class="uk-margin-top">
+            <p>“When they are down, when they are tested, they find a win!”, who does not remember Toni Kroos’ freekick from the narrowest of angles in the 90+5 minute to clinch a 2-1 victory for the Germans against Sweden in the 2018 World Cup. It was such a high-paced game, Germany was pressing extremely high-up the pitch and left themselves vulnerable on the break, which the Swedes used to their advantage.</p>
+            <p>Although both teams have unarguably only improved in these two years, their playing philosophy has stayed the exact same, high-pressing possession against defensive transition football. However, the key difference to this rematch is that Germany has since then adopted the 3-4-3 formation in contrast to their traditional 4-2-3-1.</p>
+          </div>
+        </div>
+
+        <!-- As I said in the reflection, I decided to hide most of the parallaxes on mobile, because the cropped version of the images and the captions looked really unappealling -->
+
+          <div id="parallax" class="uk-visible@s uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/germany_line_up.png');">
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                <p>With the 3-4-3 formation, Germany is much harder to break down and highly adaptable to any opponent (©<a href="https://www.bundesliga.com/en/bundesliga/news/how-will-germany-line-up-at-uefa-euro-2020-8194">Bundesliga.</a>)</p>
+            </div>
+          </div>
+
+          <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+            <div class="uk-margin-top">
+              <p>The new 3 at the back formation would make it much more difficult for the Swedes to counter against and could potential lead to a comfortable victory for the Germans. We expect the Germans to have around 70% ball possession (average of the last 3 games between both sides) and be much more defensively stable compared to 2018.</p>
+              <h3><span class="uk-text-bold uk-text-danger">QF1 Result: Germany 2-0 Sweden</span></h3>
+            </div>
+
+    <hr class="uk-divider-icon">
+      <h2 class="uk-heading-bullet uk-text-center uk-margin-top">Denmark v Italy (3W-2D-8L, Munich)</h2>
+        <h4 class="uk-heading-line uk-text-center"><span>Last Match: 2-2 (2013)</span></h4>
+
+      <iframe src="https://www.youtube.com/embed/-V9Etg4q2So" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+          <div class="uk-margin-top">
+            <p>Italy’s head-to-head record and squad strength make them the clear favourites for this tie, however, what makes knockout competitions so exciting is that underdogs often upset the odds. When it comes to games like this, believe, form and team-spirit often becomes more important than simply quality.</p>
+            <p>What brought Denmark this far into the tournament was not only their home advantage in the group stages and the lucky draw against a weaker Norway, but also a growing believe in their own qualities. We just have to look as far as to Wales back in 2016 (or Russia in 2008 and Greece in 2004 for that matter) to see that it is more than common to see underdog success stories during the Euros. Wales made it into the semi-finals past an extremely strong Belgium side, in a match that was absolutely no fluke, but rather a world-class display of the whole Welsh national team.</p>
+          </div>
+        </div>
+
+            <div id="parallax" class="uk-visible@s uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/denmark-min.jpg');">
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                  <p>Talent and team spirit all over the pitch sends Denmark through to the semi-finals (©<a href="https://www.shutterstock.com/de/image-photo/cluj-napoca-romania-march-26-2017-611385254">salajean </a>/ Shutterstock.com).</p>
+              </div>
+            </div>
+
+            <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+            <p>This is why we predict that this 2020's Wales comes in the form of Denmark ,with a few quality players and a strong believe, they manage to dominate a game against the Italians. Eriksen, Poulsen and Bruun Larsen are at the heart of Denmark’s astonishing performance against Italy. Even though most of the predictions until now are built on statistics, there is nothing more satisfying to see in the world of football than David beating Goliath.</p>
+            <h3><span class="uk-text-bold uk-text-danger uk">QF2 Result: Denmark 3-1 Italy</span></h3>
+
+    <hr class="uk-divider-icon">
+      <h2 class="uk-text-center uk-heading-bullet uk-margin-top">Belgium v Netherlands (6W-8D-8L, Baku)</h2>
+        <h4 class="uk-heading-line uk-text-center"><span>Last Match: 1-1 (2018)</span></h4>
+
+            <iframe src="https://www.youtube.com/embed/UyNW0_dKTPI" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+                <div class="uk-margin-top">
+                  <p>Belgium’s golden generation against the Netherland’s upcoming golden generation, what an exciting match-up this is. Ever since Roberto Martinez took over the Belgium national team after UEFA Euro 2016 and incorporated the 3-4-3 formation, the team has been playing extraordinarily well, even topping the <a href="https://www.fifa.com/fifa-world-ranking/ranking-table/men/">FIFA world rankings</a>. After a third-place finish at the 2018 World Cup, the team will be extra motivated as this could be the last time that this generation of players (including Hazard, Mertens, De Bruyne, Vertonghen etc.) are able to challenge for a major title.</p>
+                  <p>Despite their world-class starting eleven, which could possibly even be the best in the world, Belgium’s weakness lies in their squad depth. Playing a 3-4-3 formation requires high amounts of energy and tactical understanding of all the players in the team. However, unlike other teams like Germany, Belgium is lacking options to replace the stars in the starting eleven and we predict that this could lead to Belgians’ demise. Add to this Koeman’s Netherlands with their classical Dutch 4-3-3 total-football philosophy, it is going to be a very tough match. If two or three of the Belgian stars miss out on this game due to bookings or injuries, we believe that the game could pen in favour of the Dutch.</p>
+                </div>
+              </div>
+
+                  <div id="parallax" class="uk-visible@s uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/netherlands-min.jpg');">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                        <p>Three words to sum-up this young Dutch side: Confidence, Creativity and Control (©<a href="https://www.shutterstock.com/de/image-photo/minsk-belarus-october-13-2019-uefa-1531425212">Piotr Piatrouski </a>/ Shutterstock.com).</p>
+                    </div>
+                  </div>
+
+                <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+                  <p>What makes the Netherlands extremely dangerous for Belgium is their adaptability to different situations, as the team can transition very fast and attack out wide via Promes and Bergwijn or keep the ball and play through the lines with a very technical backline (De ligt, Van Dijk, Blind) and midfield (De Jong, Wijnaldum, De Roon/Van De Beek). We predict that someone from the Belgium midfield might miss this match and let the Netherlands take control in the midfield, which ultimately decides the game, although there is not a lot that separate both sides.</p>
+                  <h3><span class="uk-text-bold uk-text-danger uk">QF3 Result: Netherlands 3-1 Belgium (FT 1-1)</span></h3>
+
+    <hr class="uk-divider-icon">
+      <h2 class="uk-text-center uk-heading-bullet uk-margin-top">Switzerland v England (3W-6D-16L, Rome)</h2>
+          <h4 class="uk-heading-line uk-text-center"><span>Last Match: 0-0, 5-6 PEN (2019)</span></h4>
+
+            <iframe src="https://www.youtube.com/embed/EBFP2Yr1zmA" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+                  <div class="uk-margin-top">
+                    <p>Less than a year ago, when England faced Switzerland in the UEFA Nations League match for third place, it felt like the goal posts had a spell over them. Although England dominated the whole game (60% possession and 5 shots on target compared to Switzerland’s 2), they left it to the penalty shootout to grab the win against Switzerland.</p>
+                    <p>This time around, the Three Lions are a much more complete team as mentioned before and Sancho, who has been a relevation so far in the tournament is once again a key figure for the English side. With trickery in his feet, an eye for a pass and goal, the Swiss like find it hard to cope with the young Borussia Dortmund winger.</p>
+                </div>
+              </div>
+
+                    <div id="parallax" class="uk-visible@s uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/sancho.jpg');">
+                      <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                          <p>England's talisman Jadon Sancho has been the best player in the tournament so far (©<a href="https://www.shutterstock.com/de/image-photo/guimaraes-portuglal-june-09-2019-jadon-1439834027">Vlad 1988 </a>/ Shutterstock.com).</p>
+                      </div>
+                    </div>
+
+                  <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+                    <p>As favourites to win the tournament and extra motivation to play the final two rounds at home, we predict that the Three Lions will not face too many issues against Switzerland. Compared to Spain, who lost to Switzerland because of bad luck and lack of physicality, England’s squad is in incredibly scoring form and match the physicality of any side in the world and should win comfortably against the Swiss, who have not won against England since 1980.</p>
+                    <h3 id="results_qf"><span class="uk-text-bold uk-text-danger uk">QF4 Result: Switzerland 0-3 England</span></h3>
+                  <hr class="uk-divider-icon">
+
+            <h3 class="uk-heading-bullet">Quarter-Finals Results:</h3>
+                    <div>
+                        <button class="uk-button uk-button-default uk-width-1-1" type="button" uk-toggle="target: #toggle; animation: uk-animation-fade">Reveal</button>
+                        <div id="toggle" class="demo2" hidden></div>
+                    </div>
+
+
+
+      <!-- Semi-Finals -->
+      <!-- I am not really happy with myself because I could not think of another way to deliver the semi-finals and just copied what I did for the quarte-finals.
+          I am not sure if this is bad or good, because maybe it's less confusing to have two stages designed the same way, as most of my friends, who I showed this article, did not complain about it. -->
+
+      <h1 id="semi_finals" class="uk-heading-divider">Semi-Finals</h1>
+      <h3 class="uk-heading-bullet">Seeding</h3>
+      <p>Is Football finally coming home? Are three-time winners Germany taking the trophy once again? Can the Dutch crown their comeback into international football? Or can Denmark possibly defy all odds and take first spot on the podium?</p>
+      <p>The trophy is so close yet so far for these four nations. Read through our predictions of the semi-finals below or skip to the <a href="#results_sf">results</a>:</p></p>
+
+      <ul class="uk-list uk-list-bullet">
+          <li>SF1: Germany v Denmark (London)</li>
+          <li>SF2: England v Netherlands (London)</li>
+      </ul>
+      <hr class="uk-divider-icon">
+
+
+    <h2 class="uk-heading-bullet uk-text-center">Germany v Denmark (3W-2D-3L, London)</h2>
+      <h4 class="uk-heading-line uk-text-center"><span>Last Match: 1-1 (2017)</span></h4>
+
+      <iframe src="https://www.youtube.com/embed/KvSYFlxYRtE" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+      <div class="uk-margin-top">
+        <p>No one could have expected such an equal head-to-head record between these two sides, as most teams will have a negative record against the Germans. Surprisingly, the last game between them ended in a 1-1 draw in 2017, however, it was a friendly in which Germany did experiment quite a bit with their starting eleven.</p>
+        <p>Statistically, Germany is the better side than Denmark, averaging more possession, shots, passes, xG and much more on average, but the Danish are one of the toughest sides to beat in International Football, having not lost a single competitive game since missing out on Euro 2016, except two games in the 2018 World Cup, this team’s strength lies in its stability and lack of mistakes.</p>
+      </div>
+    </div>
+
+        <div id="parallax" class="uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/reus.jpg');">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+              <p>Injury-plagued Marco Reus enjoys his first proper international tournament and leads Germany's young offensive line (©<a href="https://www.shutterstock.com/de/image-photo/wolfsburg-germany-march-20-2019-german-1411234541">Michele Morrone </a>/ Shutterstock.com).</p>
+          </div>
+        </div>
+
+      <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+        <p>However, even considering all these facts, we predict that Germany will still come out victorious in this semi-final match. The Danish do have the quality to surprise any opposition in the tournament, as seen in their 3-1 against Italy, and we predict that they could make it very difficult for the Germans. In the end, the game could see some goals as this match-up promises 2.5 goals on average. After a tough nerve-wrecking game it could be decided via a penalty shoot-out, in which Germany’s elite mentality sees them through into the final.</p>
+      <h3><span class="uk-text-bold uk-text-danger uk">SF1 Result: Germany 2-2 Denmark FT, Germany 6-5 Denmark PEN</span></h3>
+        <hr class="uk-divider-icon">
+
+
+    <h2 class="uk-heading-bullet uk-text-center">England v Netherlands (6W-9D-7L, London)</h2>
+      <h4 class="uk-heading-line uk-text-center"><span>Last Match: 1-3 (2019)</span></h4>
+
+      <iframe src="https://www.youtube.com/embed/XoyTqGrzAws" width="100%" height="506" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+
+      <div class="uk-margin-top">
+        <p>England and the Netherlands meet once again in a semi-final. Just a year prior these two faced each other in a thrilling game in the semi-finals of the UEFA Nations League, a game that is remembered by its’ multiple individual mistakes by defenders that led to 3 of the 4 goals and a famous 3-1 win for the Dutch. However, this time around, the audience can expect a much more composed defence on either side.</p>
+        <p>Having said that, the starting line-up of both sides will likely to be very similar to the one in the Nations League, with the only exceptions probably being Alexander-Arnold and Henderson replacing Walker and Rice/Delph. As a result, we predict that this match will develop similarly to the previous game. The last match, despite the highlights, was almost completely dominated by the Dutch (53% possession, 28 shots and 12 shots on target), with England having difficulties (47% possession, 15 shots and 3 shots on target) to establish any attacking rhythm.</p>
+        <p>At the heart of all of this was Frenkie De Jong. The current Barcelona midfielder is regarded as a generational talent and even though he does not offer much threat in the attacking third of the pitch, remains incredibly calm under pressure and always finds the right positive pass to lead his team up the pitch from his defensive midfield position.</p>
+      </div>
+    </div>
+
+        <div id="parallax" class="uk-inline uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -400" style="background-image: url('img/dejong.jpg');">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+              <p>Midfield Maestro Fenkie De Jong dictates the tempo of the whole game against England (©<a href="https://www.shutterstock.com/de/image-photo/guimaraes-portugal-june-05-2019-frenkie-1448811917">Vlad1988 </a>/ Shutterstock.com).</p>
+          </div>
+        </div>
+
+        <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+        <p>What highlighted the previous match was a frustration on England’s side of losing control in midfield and running after the ball for majority of the game. Therefore, despite England’s world-class attacking threat, which brought the team past Switzerland and World Cup winners France, we predict that the Dutch will once again dominate the midfield and prevent the Three Lions' attacking talent from shining.</p>
+        <h3 id="results_sf"><span class="uk-text-bold uk-text-danger uk">SF2 Result: England 1-2 Netherlands</span></h3>
+          <hr class="uk-divider-icon">
+
+          <h3 class="uk-heading-bullet">Semi-Finals Results:</h3>
+                  <div>
+                      <button class="uk-button uk-button-default uk-width-1-1" type="button" uk-toggle="target: #toggle; animation: uk-animation-fade">Reveal</button>
+                      <div id="toggle" class="demo3" hidden></div>
+                  </div>
+
+
+
+      <!-- Finale -->
+
+      <h1 id="finale" class="uk-heading-divider">Finale</h1>
+        <h2 class="uk-heading-bullet uk-text-center">Germany v Netherlands (8W-11D-10L, London)</h2>
+
+      <!-- I just really wanted to end the tournament with a full 'real' match and thought of the idea to simulate the match
+      on my playstation to avoid any bias that I could possibly have towards any of the teams.
+      I changed the tactics and starting eleven of both teams to match their national team's style of football and let two CPU's to play against each other.
+      Then I watched and recorded the game on my console and used the highlight clips to bring the goals to life for the viewer. -->
+
+      <!-- Although not of any importance to the code, I felt really excited watching the match, having put so many hours into this assignment
+      and then to watch the final result of my work played in front of me almost felt like a real Euros finale. -->
+
+      <div class="uk-container uk-container-small uk-container-center uk-margin-top uk-text-justify">
+      <div id="lightbox" uk-lightbox="animation: fade" video-autoplay>
+
+      <!-- I couldn't quite figure out how to make the captions in the lightbox stay visible for a longer duration, which annoys me a bit,
+      because the user has to hover around the screen to not let the the captions that I wrote disappear. -->
+      <!-- Also, I originally uploaded a directory with all the goal clips as mp4 files and it worked on my desktop.
+      However, after uploading everything into the public html folder, the video clips started to have issues and it was almost like a russian roulette, which of the clips would be working and which not.
+      I tried several things to fix this issue and uploaded the clips again and again, but it was just completely arbitrary whether the videos would work or not.
+      To avoid this, I uploaded all the videos on youtube and linked them to the lightbox this way, but the youtube buffering really ruins the effect of having the video pop up at the same time as the caption and spoils the whole experience.
+      The youtube UI also overlaps with the lightbox UI and makes it even harder to read the captions. I am so frustrated by this.-->
+        <div>
+            <a class="uk-inline" href="img/handshake.jpg" data-caption="Both teams are ready to kick-off as captains Manuel Neuer and Virigl van Dijk shake hands seconds before the ball starts rolling">
+                <img src="img/trophy-min.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="img/first_half1.jpg" data-caption="The beginning of the match his highly intense, the teams are very compact, tackles are flying and not many goal-scoring chances are created. Both teams' are missing individual moments of brilliance from their star players (0'-15' minutes)"></a>
+        </div>
+        <div>
+            <a href="img/first_half2.jpg" data-caption="Slowly, however, the Dutch are taking control of the in midfield and force Die Mannschaft into their own defensive third. The pressure builds and Frenkie de Jong receives the ball near the German 18-yard box... (15'-30' minutes)"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=upGD6VmfE0k&feature=youtu.be" data-caption="...and spots a late-run by Marten de Roon into the penalty box, who calmly slots the ball past Manuel Neuer (37' minute)"></a>
+        </div>
+        <div>
+            <a href="img/first_half3.jpg" data-caption="With a 1-0 lead, the Netherlands continue to dominate the rest of the first half but fail to score another goal within their momentum (45' minute)"></a>
+        </div>
+        <div>
+            <a href="img/second_half1.jpg" data-caption="At the start of the second half, Germany still find it hard to find their rhythm, but a clumsy shove in the back Timo Werner by Denzel Dumfries gifts the struggling team a penalty (45'-55' minute)"></a>
+        </div>
+        <div>
+            <a href="img/kroos.jpg" data-caption="Toni Kroos, mister reliant himself, takes responsibility and steps up take the decisive penalty, that would bring Germany back into the game...(58' minute)"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=VDV0qd7aTFs&feature=youtu.be" data-caption="...but completely miskicks it (58' minute)"></a>
+        </div>
+        <div>
+            <a href="img/substitution.jpg" data-caption="After the missed penalty, Joachim Löw decides to make a tactical substitution and replaces an ineffective Marco Reus with Leon Goretzka. With one more midfielder in the middle of the park, the Germans can dominate possession and use Werner's and Gnabry's pace on the flanks to break through the back-four."></a>
+        </div>
+        <div>
+            <a href="img/werner.jpg" data-caption="The change in tactics seems to work and Werner manages to dribble through the Dutch press and find some space behind their backline"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=GdR1Uw_Z7ZI&feature=youtu.be" data-caption="Werner then finds Goreztka with a low-driven cross, who hits the ball first time and through the legs of Cillessen (65' minute)"></a>
+        </div>
+        <div>
+            <a href="img/schulz.jpg" data-caption="Completely in their flow now, the Germans are outplaying a flustered Dutch side and before anyone could even react..."></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=MgpPnWMbcrQ&feature=youtu.be" data-caption="...Gnabry scores the second goal in quick succession (68' minute)"></a>
+        </div>
+        <div>
+            <a href="img/van_dijk.jpg" data-caption="After the strong setback, van Dijk tries to motivate his teammates for one final push (70' minute)"></a>
+        </div>
+        <div>
+            <a href="img/babel.jpg" data-caption="However, it is simply not meant to be as legs were getting weak and the two goals destroyed the mentality of the Netherlands (70'-90' minutes)"></a>
+        </div>
+        <div>
+            <a href="img/win.jpg" data-caption="Game, set and match! The winner of UEFA Euro 2020 are Germany, who become the first team in history to have won the competition four times"></a>
+        </div>
+      </div>
+
+      <hr class="uk-divider-icon">
+      <div class="uk-heading-divider uk-text-center">
+        <h4>Not satisfied with the result?</h4>
+        <h4>Simulate the match below yourself.</h4>
+      </div>
+
+            <div id="simulator">
+              <div class="uk-background-fixed" style="background-image: url(img/simulator_bg.jpg);">
+
+                <!-- Note!!! I did not create this simulator (app.js). I only edited the js and css (style.css) to customize this code to fit my own tournament -->
+                <!-- I wouldn't say that I understand all the jquery code, so it was a challenge to get it to work inside my UIkit container and modify the code. -->
+                <!-- I found the original code online and the creator stated that anyone can use it. It can be found here (http://downloadmycode.com/post/1150656893) -->
+
+              	<div class="score_card">
+              		<div class="inner_card">
+              			<div class="left_team">
+              				<div class="team_container">
+              					<img src="images/germany.png">
+              					<span data-id="Germany">0</span>
+              				</div>
+              			</div>
+
+              			<p class="vs">VS</p>
+
+              			<div class="right_team">
+              				<div class="team_container">
+              					<img src="images/netherlands.jpg">
+              					<span data-id="Netherlands">0</span>
+              				</div>
+              			</div>
+              		</div>
+
+              		<p class="start">Click anywhere to kick-off!</p>
+              	</div>
+
+              	<div class="fact_card">
+
+              	</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="uk-section-default">
+              <div class="uk-section uk-light uk-background-cover" style="background-image: url(img/footer.jpg)">
+                  <div class="uk-container">
+
+                      <h3>Attribution</h3>
+
+                      <!-- all the sources for the data and codes can be found in the reflection. -->
+
+                      <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-3@l" uk-grid>
+                          <div>
+                              <h4 class="uk-heading-bullet">All images used under the Creative Commons Attribution-Share Alike 3.0 Unported license:</h4>
+                              <p><a href="https://commons.wikimedia.org/wiki/File:NED-DEN_Euro_2012_(09).jpg">Dmitrij Nejmyrok / </a>
+                                  <a href="https://commons.wikimedia.org/wiki/File:20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Ciro_Immobile_au_milieu_de_la_d%C3%A9fense_portugaise.jpg">Clément Bucco-Lechat</a></p>
+                          </div>
+                          <div>
+                              <h4 class="uk-heading-bullet">All images used under the Creative Commons 2.0 License:</h4>
+                              <p><a href="https://flickr.com/photos/30478819@N08/49162062126/in/photostream/">Marco Verch</a> on flickr</p>
+                          </div>
+                          <div>
+                              <h4 class="uk-heading-bullet">All royalty-free images downloaded from Shutterstock only for editorial use (non-commercial use):</h4>
+                              <p><a href="https://www.shutterstock.com/de/image-photo/krakow-poland-june-30-2017-european-670009810">Marcin Kadziolka / </a>
+                                  <a href="https://www.shutterstock.com/de/image-vector/soccer-european-championship-2020-abstract-seamless-1566238468">GavrBY / </a>
+                                  <a href="https://www.shutterstock.com/de/image-photo/trent-alexanderarnold-england-scores-second-goal-1276175590">MDI / </a>
+                                  <a href="https://www.shutterstock.com/de/image-photo/0107-moscow-russiasergio-ramos-action-during-1124597102">Marco Iacobucci Epp / </a>
+                                  <a href="https://www.shutterstock.com/de/image-photo/wolfsburg-germany-march-20-2019-german-1411234541">Michele Morrone / </a>
+                                  <a href="https://www.shutterstock.com/de/image-photo/cluj-napoca-romania-march-26-2017-611385254">salajean / </a>
+                                  <a href="https://www.shutterstock.com/de/image-photo/minsk-belarus-october-13-2019-uefa-1531425212">Piotr Piatrouski / </a></p>
+                                  <a href="https://www.shutterstock.com/de/image-vector/soccer-european-championship-2020-abstract-blue-1555743380">ArtDesign Illustration</a></p>
+                              <p>multiple images by
+                                  <a href="https://www.shutterstock.com/de/g/Vlad1988">Vlad1988 / </a>
+                                  <a href="https://www.shutterstock.com/de/g/siempreverde22">Anton_Ivanov</a>
+                              </p>
+                          </div>
+                      </div>
+
+                      <div class="uk-grid-match uk-child-width-1-1" uk-grid>
+                        <p>@Bowie Qiu</p>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+    </body>
+
+    <!-- js for the simulator -->
+  <script src="js/app.js"></script>
+
+<!-- js for the charts for the round of 16 -->
+  <script src="charts.js"></script>
+
+<!-- ja for the tournament brackets -->
+  <script src="brackets.js"></script>
+
+</html>
